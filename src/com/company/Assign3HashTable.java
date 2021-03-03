@@ -1,14 +1,12 @@
 package com.company;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Assign3HashMap {
+public class Assign3HashTable {
 
     public static void main(String[] args) {
 
-        HashMap<String, Double> pricePage = new HashMap<String, Double>();
+        Hashtable<String, Double> pricePage = new Hashtable<>();
         pricePage.put("Apples", 0.30);
         pricePage.put("Bananas", 0.40);
         pricePage.put("Pears", 1.20);
@@ -33,7 +31,7 @@ public class Assign3HashMap {
         String maxPrice = Collections.max(pricePage.keySet());
         System.out.println("Highest product price: " + maxPrice + " = " + pricePage.get(maxPrice) + " Eur.");
 
-        HashMap<String, Double> pricePage2 = new HashMap<String, Double>();
+        Hashtable<String, Double> pricePage2 = new Hashtable<>();
         pricePage2.put("Potatoes", 0.35);
         pricePage2.put("Carrots", 0.45);
         pricePage2.put("Onion", 0.70);
@@ -75,23 +73,15 @@ public class Assign3HashMap {
     public static double highestPrice(Map<String, Double> map) {
         return Collections.max(map.values());
     }
-}
 
-//FOR LEARNING PURPOSES:
-   /* public static void sortedByValue(HashMap<String, Double> map) {
-        System.out.println("Price page sorted by value(price): ");
-        Map<String, Double> price = new LinkedHashMap();
-        map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEachOrdered(x ->
-                price.put(x.getKey(), x.getValue()));
-        System.out.println(price);
-    }
 
     public static void print(Map<String, Double> pricePage2) {
         Set set = pricePage2.entrySet();
         Iterator i = set.iterator();
-        while(i.hasNext()) {
-            Map.Entry products = (Map.Entry)i.next();
+        while (i.hasNext()) {
+            Map.Entry products = (Map.Entry) i.next();
             System.out.print(products.getKey() + ": ");
             System.out.println(products.getValue());
         }
-    }*/
+    }
+}
