@@ -43,17 +43,4 @@ public class PalindromeStack {
         return inputStr.replaceAll("[^a-z]", "");
     }
 
-    // Palindrome check with loop:
-    /*public static boolean isPalindrome(String strLettersOnly) {
-
-        int i = 0;
-        int j = strLettersOnly.length() - 1;
-        while (i < j) {
-            if (strLettersOnly.charAt(i) != strLettersOnly.charAt(j))
-                return false;
-            i++;
-            j--;
-        }
-        return true;
-    }*/
 }

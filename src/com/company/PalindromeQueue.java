@@ -10,10 +10,6 @@ public class PalindromeQueue {
 
     public static void main(String[] args) {
 
-//        System.out.println("Enter any string you like for Palindrome check");
-//        Scanner in = new Scanner(System.in);
-//        String inputStr = in.nextLine();
-
 //        String str = "Mom";
 //        String str = "Was it a car or a cat I saw?";
         String inputStr = "Madam, in Eden, I'm Adam.";
